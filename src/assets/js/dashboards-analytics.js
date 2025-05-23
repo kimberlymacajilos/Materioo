@@ -21,7 +21,6 @@ fetch('/api/albums-over-time/')
       chart: { type: 'line', height: 300 },
       series: [{ name: 'Albums', data: data.counts }],
       xaxis: { categories: data.years },
-      title: { text: 'Albums Released Each Year', align: 'left' }
     }).render();
   });
 
@@ -33,7 +32,6 @@ fetch('/api/album-type-distribution/')
       chart: { type: 'donut', height: 300 },
       series: data.counts,
       labels: data.labels,
-      title: { text: 'Album Types', align: 'left' }
     }).render();
   });
 
@@ -45,7 +43,6 @@ fetch('/api/awards-by-album/')
       chart: { type: 'bar', height: 300 },
       series: [{ name: 'Awards', data: data.counts }],
       xaxis: { categories: data.titles },
-      title: { text: 'Awards Per Album', align: 'left' }
     }).render();
   });
 
